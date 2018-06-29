@@ -1,24 +1,42 @@
 @charset "utf-8";
+
+@font-face {
+	font-family: MainTitleFont;
+	src: url(../fonts/quantifybold.ttf)
+}
 /* CSS Document */
 
+h1 {
+	font-family: MainTitleFont;
+	font-size: 3rem;
+}
+
 body {
-	-webkit-animation: colorchange 60s infinite;
-	animation: colorchange 60s infinite;
+	-webkit-animation: colorchange 30s infinite;
+	animation: colorchange 30s infinite;
+	
+	color: whitesmoke;
 }
 
 @-webkit-keyframes colorchange {
 	
-	0% {background: #33FFF3;}
-	25% {background: #78281F;}
-	50% {background: #117A65;}
-	75% {background: #DC7633;}
-	100% {background: #9B59B6;}
+	0% {background: #1E1E1E;}
+	50% {background: #3A3A3A;}
+	100% {background: #1E1E1E;}
 }
 
 @keyframes colorchange {
-	0% {background: #33FFF3;}
-	25% {background: #78281F;}
-	50% {background: #117A65;}
-	75% {background: #DC7633;}
-	100% {background: #9B59B6;}
+	0% {background: #1E1E1E;}
+	50% {background: #3A3A3A;}
+	100% {background: #1E1E1E;}
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  /*background-image: url("../images/TeraIncognita1.jpg");*/
+  background-color: dimgrey;
+  border-radius: 0.3rem;
 }
