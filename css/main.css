@@ -11,32 +11,77 @@ h1 {
 	font-size: 3rem;
 }
 
+
 body {
 	-webkit-animation: colorchange 30s infinite;
 	animation: colorchange 30s infinite;
 	
-	color: whitesmoke;
+	color: #DFDFDF;
 }
 
-@-webkit-keyframes colorchange {
-	
-	0% {background: #1E1E1E;}
-	50% {background: #3A3A3A;}
-	100% {background: #1E1E1E;}
-}
 
-@keyframes colorchange {
-	0% {background: #1E1E1E;}
-	50% {background: #3A3A3A;}
-	100% {background: #1E1E1E;}
-}
 
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  /*background-image: url("../images/TeraIncognita1.jpg");*/
-  background-color: dimgrey;
-  border-radius: 0.3rem;
+  height: 30rem;
+  background-image: url("../images/joel-filipe-195321-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center bottom;
+  background-size: cover;
+  border-radius: 0.7rem;
+}
+
+.img-profile 
+{
+	width: auto;
+	height: 17.5rem;
+}
+
+.mr-3spin 
+{
+	margin-right: 1rem !important;
+	animation: spin 6s linear infinite;
+}
+
+.mr-3 
+{
+	animation: float 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes colorchange {
+	
+	0% {background: #363636;}
+	50% {background: #363636;}
+	100% {background: #363636;}
+}
+
+@keyframes colorchange {
+	0% {background: #363636;}
+	50% {background: #363636;}
+	100% {background: #363636;}
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(-5px);
+	}
+	50% {
+		transform: translatey(5px);
+	}
+	100% {
+		transform: translatey(-5px);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg)
+	}
+	100% {
+		transform: rotate(360deg)
+	}
 }
