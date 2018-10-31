@@ -11,58 +11,125 @@ h1 {
 	font-size: 3rem;
 }
 
+h4 
+{
+	padding-top: 20px;
+}
+
+h5 
+{
+	font-size: 2.0rem;
+	font-weight: bolder;
+}
+
 
 body {
 	-webkit-animation: colorchange 30s infinite;
 	animation: colorchange 30s infinite;
 	
-	color: #DFDFDF;
+	color:#151416;
 }
 
+.header-area
+{
+	color: aliceblue;
+}
 
+.header-subtext 
+{
+	margin: auto;
+	width: 80%;
+}
 
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-top: 0px;
   height: 30rem;
-  background-image: url("../images/joel-filipe-195321-unsplash.jpg");
+  width: auto;
+  background-image: url("../images/joel-filipe-195321-unsplash2.jpg.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
-  border-radius: 0.7rem;
 }
 
 .img-profile 
 {
 	width: auto;
 	height: 17.5rem;
+	border-radius: 100%;
+	animation: float 6s ease-in-out infinite;
+	margin-top: 15px;
+}
+
+.media-body {
+	text-align: center;
+	font-size: 1.25rem;
 }
 
 .mr-3spin 
 {
-	margin-right: 1rem !important;
-	animation: spin 6s linear infinite;
+	display: block;
+	margin: auto;
+	margin-bottom: 30px;
+	width: 5em;
+	height: 5em;
+	animation: spin 4s linear infinite;
 }
 
-.mr-3 
+.mr-3float 
 {
-	animation: float 6s ease-in-out infinite;
+	display: block;
+	margin: auto;
+	margin-bottom: 30px;
+	width: 5em;
+	height: 5em;
+	animation: float 4s ease-in-out infinite;
+}
+
+.img-fluid
+{
+	transition: 0.4s;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	margin-top: 15px;
+}
+
+.img-fluid:hover
+{
+	transform: scale(1.05, 1.05);
+}
+
+.justified-text 
+{
+	text-align: justify;
+}
+
+.btn-dark 
+{
+	display: block;
+	margin: auto;
+	width: 11em;
+	height: 3em;
+	border-radius: 10px;
+	font-size: 1.25em;
+	font-weight: bolder;
+	/*background-color: #A02EBF;*/
+	transition: 0.4s;
+	border: hidden;
 }
 
 @-webkit-keyframes colorchange {
 	
-	0% {background: #363636;}
-	50% {background: #363636;}
-	100% {background: #363636;}
+	0% {background: #f8f9fa;}
+	50% {background: #f8f9fa;}
+	100% {background: #f8f9fa;}
 }
 
 @keyframes colorchange {
-	0% {background: #363636;}
-	50% {background: #363636;}
-	100% {background: #363636;}
+	0% {background: #f8f9fa;}
+	50% {background: #f8f9fa;}
+	100% {background: #f8f9fa;}
 }
 
 @keyframes float {
@@ -79,9 +146,9 @@ body {
 
 @keyframes spin {
 	0% {
-		transform: rotate(0deg)
+		transform: rotate(0deg);
 	}
 	100% {
-		transform: rotate(360deg)
+		transform: rotate(360deg);
 	}
 }
